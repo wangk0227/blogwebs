@@ -1,0 +1,66 @@
+.content{
+    margin-top: 15px;
+    padding: 25px 20px 15px;
+    min-height: 700px;
+}
+
+.content .blog-title {
+    padding-bottom: 25px;
+    height: 70px;
+}
+
+.content .blog-title .title {
+    font-size: 20px;
+    color: #606266;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.content .blog-title .other {
+    color: #C0C4CC;
+    font-size: 0.5em;
+}
+
+.left{
+    min-height: 700px;
+
+}
+.left .left-content {
+    height: 100%;
+    padding: 40px 0 0 0 ;
+    max-height: 752px;
+    overflow: auto;
+    z-index: 1;
+    visibility: visible;
+    position:fixed;
+    top: 64px;
+    left: 0;
+    width: 16.4%;
+    border-right: 1px solid #dcdee2;
+    background-color: #f8f8f9
+
+}
+.left .left-content ul li{
+    /*line-height: 2.5;*/
+    /*display: block;*/
+    /*padding-left: 10px;*/
+    /*margin-right: 3%;*/
+    /*cursor:pointer*/
+
+}
+.left .left-content ul li a{
+    color: #17233d ;
+    line-height: 2.5;
+    display: block;
+    padding-left: 10px;
+    margin-right: 3%;
+    cursor:pointer
+}
+.left .left-content dl dd a{
+    padding-left: 20px;
+}
+.active{
+    font-weight: 600;
+    background: rgba(62,175,124,0.2);
+    border-right: 3px solid #19be6b;
+}

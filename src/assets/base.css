@@ -1,0 +1,86 @@
+* {
+    font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+
+}
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote,
+dl, dt, dd, ul, ol, li,
+pre,
+fieldset, lengend, button, input, textarea,
+th, td {
+    margin: 0;
+    padding: 0;
+}
+input {
+    border: 0;
+    outline: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+h1 { font-size: 18px; /* 18px / 12px = 1.5 */ }
+h2 { font-size: 16px; }
+h3 { font-size: 14px; }
+h4, h5, h6 { font-size: 100%; }
+
+address, cite, dfn, em, var, i{ font-style: normal; }
+b, strong{ font-weight: normal; }
+code, kbd, pre, samp, tt { font-family: "Courier New", Courier, monospace; }
+small { font-size: 12px; }
+
+ul, ol { list-style: none; }
+
+
+a { text-decoration: none; color: #666;}
+
+
+
+legend { color: #000; }
+fieldset, img { border: none; }
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+hr {
+    border: none;
+    height: 1px;
+}
+.clearFix::after{
+    content:"";
+    display: block;
+    clear:both;
+}
+
+html { overflow-y: scroll; }
+
+
+.clearfix::after {
+    display: block;
+    height: 0;
+    content: "";
+    clear: both;
+    visibility: hidden;
+}
+
+.demo-spin-icon-load {
+    animation: ani-demo-spin 1.5s linear infinite;
+}
+
+.page {
+    margin-top: 12px;
+    float: right;
+}
+
+.btn_save {
+    margin-right: 5px;
+}

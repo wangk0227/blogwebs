@@ -1,0 +1,106 @@
+.layout-base {
+    background-color: #f5f7f9;
+    position: relative;
+    overflow: hidden;
+}
+
+.layout-base .layout-header {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    background-color: #fafafa;
+    z-index: 100;
+    border-bottom: 1px solid #ddd;
+}
+
+.layout-header span {
+    display: inline-block;
+    font-size: 0.5em;
+    color: #909399;
+    margin-left: 5px;
+}
+
+.layout-header .header-title {
+    display: inline-block;
+    color: #2D8CF0;
+    cursor: pointer;
+}
+
+.layout-header .header-search {
+    display: inline-block;
+    float: right;
+    margin-top: 15px;
+}
+
+.header-fixed {
+    /*解决固定定位导致的塌陷*/
+    height: 64px;
+    width: 100%;
+}
+
+.layout-footer .footer-col {
+    border-top: 1px solid #ddd;
+}
+
+.layout-content .content-public {
+    min-height: 700px;
+    margin-top: 15px;
+}
+
+.layout-content .content-right {
+    padding: 20px;
+    border-left: 1px solid #ddd;
+}
+
+.right-main .about {
+    min-height: 100px
+}
+.right-main .about .about-title{
+    border-bottom: 1px solid #dcdfe6;
+    font-size:16px;
+    line-height: 30px;
+    color:#606266
+}
+.right-main .about .about-main{
+    margin-top: 15px ;
+    min-height: 100px
+}
+.right-main .about .about-main img{
+    height: 100px
+}
+.right-main .about .about-main div{
+    font-size: 10px;
+    line-height: 30px;
+    color:#909399
+}
+.right-main .public{
+    margin-top: 18px;
+    min-height: 100px
+}
+.right-main .public .public-title{
+    border-bottom: 1px solid #dcdfe6;
+    font-size:16px;
+    line-height: 30px;
+    color:#606266
+}
+.right-main .public .public-main{
+    margin-top: 5px;
+    min-height: 100px
+}
+.right-main .public .public-main li{
+    font-size: 10px;
+    line-height: 25px;
+    color:#909399;
+    cursor: pointer
+}
+.right-main .public .public-main li:hover{
+    color: #2D8CF0;
+}
+.right-main .public .public-main li a {
+    text-decoration: none;
+    color:#909399
+}
+.right-main .public .public-main li a:hover{
+    color: #2D8CF0;
+}

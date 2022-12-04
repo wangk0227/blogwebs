@@ -1,0 +1,36 @@
+.index-page {
+    /*页码*/
+    text-align: center;
+}
+
+.content-main{
+    /*最小高度*/
+    min-height: 700px ;
+}
+
+.article-content {
+    padding: 25px 10px 15px;
+
+}
+
+.article-content .content-title {
+    font-size: 20px;
+    color: #606266;
+    margin-bottom: 5px;
+    cursor: pointer
+}
+
+.article-content .content-unimportant {
+    color: #C0C4CC;
+    font-size: 0.5em;
+}
+
+.article-content .content-body {
+    padding: 25px 0 0;
+}
+
+.no-data {
+    min-height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
