@@ -37,5 +37,6 @@ npm run test:unit
 ### Lint with [ESLint](https://eslint.org/)
 
 ```sh
-npm run lint
+npm run lint 
 ```
+也可以使用yarn命令
