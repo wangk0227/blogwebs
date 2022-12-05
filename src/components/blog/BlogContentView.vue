@@ -31,6 +31,15 @@
       </div>
       <!-- 博客内容     -->
       <div v-html="content"></div>
+      <div class="original">
+        <strong>原文作者:</strong>
+        作者名称
+        <hr>
+        <strong>版本声明:</strong>
+        本作品采用
+        <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/">知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议</a>
+        非商业转载请注明出处,商业转载请联系作者获得授权。
+      </div>
     </Col>
   </Row>
 </template>

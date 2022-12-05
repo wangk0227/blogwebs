@@ -75,6 +75,9 @@
         </Row>
       </Footer>
     </Layout>
+    <BackTop :height="50" :bottom="80" :duration="5000">
+      <div class="top">回到顶部</div>
+    </BackTop>
   </div>
 </template>
 <script>
