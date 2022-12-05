@@ -4,16 +4,16 @@
       <div class="left-content">
         <ul>
           <li v-for="(parentValue,parentIndex) in headerH1_H5" :key="parentIndex"
-              @click="goAnchor(parentValue.type,parentValue.content)">
+            >
             <a href='javascript:void(0)'
-               :class='{active: parentIndex === isActive }' @click="parentItem(parentIndex)">
+               :class='{active: parentIndex === isActive }' @click="parentItem(parentIndex),goAnchor(parentValue.type,parentValue.content)">
               {{ parentValue.content }}</a>
             <dl v-if="parentValue.child.length> 0">
               <dd v-for="(childValue,childIndex) in parentValue.child" :key="childIndex"
-                  @click="goAnchor(childValue.type,childValue.content)">
+                  >
                 <a href='javascript:void(0)'
-                   :class="{active: headerH1_H5[parentIndex].child[childIndex].index === isChildActive && parentIndex === isParentActive }"
-                   @click="childItem(parentIndex,childIndex)">
+                   :class="{active: headerH1_H5[parentIndex].child[childIndex].content === isChildActive === isChildActive && parentIndex === isParentActive }"
+                   @click="childItem(parentIndex,childIndex),goAnchor(childValue.type,childValue.content)">
                   {{ childValue.content }}
                 </a>
               </dd>
@@ -103,7 +103,7 @@ export default {
       return false
     },
     childItem(parentIndex, childIndex) {
-      this.isChildActive = this.headerH1_H5[parentIndex].child[childIndex].index
+      this.isChildActive = this.headerH1_H5[parentIndex].child[childIndex].content
       this.isParentActive = parentIndex
       this.isActive = -1
       return false
