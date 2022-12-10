@@ -3,6 +3,7 @@ import {get_token} from '../utlis/cookie'
 import store from '../store'
 
 const router = createRouter({
+    mode:'hash',
     history: createWebHistory(import.meta.env.BASE_URL),
     routes: [
         {
@@ -36,7 +37,7 @@ const router = createRouter({
         },
 
         {
-            path: 'bolg/login/',
+            path: '/adminHome/bolg/login/',
             name: "Login",
             component: () => import('../views/LoginView.vue'),
             meta: {
@@ -44,7 +45,7 @@ const router = createRouter({
             }
         },
         {
-            path: 'bolg/',
+            path: '/adminHome/bolg/',
             name: 'Admin',
             component: () => import('../views/AdminIndexView.vue'),
             redirect: '/adminHome/bolg/index',
