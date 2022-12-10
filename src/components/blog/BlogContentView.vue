@@ -12,7 +12,7 @@
               <dd v-for="(childValue,childIndex) in parentValue.child" :key="childIndex"
                   >
                 <a href='javascript:void(0)'
-                   :class="{active: headerH1_H5[parentIndex].child[childIndex].content === isChildActive === isChildActive && parentIndex === isParentActive }"
+                   :class="{active: headerH1_H5[parentIndex].child[childIndex].content === isChildActive && parentIndex === isParentActive }"
                    @click="childItem(parentIndex,childIndex),goAnchor(childValue.type,childValue.content)">
                   {{ childValue.content }}
                 </a>

@@ -23,12 +23,10 @@
 
 .left{
     min-height: 700px;
-
 }
 .left .left-content {
-    height: 100%;
     padding: 40px 0 0 0 ;
-    max-height: 752px;
+    height: 91.5%;
     overflow: auto;
     z-index: 1;
     visibility: visible;
