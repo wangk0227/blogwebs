@@ -98,7 +98,6 @@ export default {
       // 点击切换验证码
       post_user_code().then(res => {
         let data = res.data
-        console.log(data)
         this.code = data.captcha
         this.captcha = BASE_URL + data.url
       }).catch((error) => {
